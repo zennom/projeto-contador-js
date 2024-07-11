@@ -1,11 +1,12 @@
-function inicio(){
-    let num
-    num = 1
-    while(num <=10){
-        console.log(num)
-    } if(num > 10){
-        console.log(num)
-    }
-}
+let input = document.getElementById("value");
 
-inicio()
+let maisUm = () => {
+    let value = parseInt(input.textContent);
+    input.innerText = value + 1;
+    console.log(value)
+}
+let menosUm = () => {
+    let value = parseInt(input.textContent);
+    input.innerText = value - 1;
+    console.log(value)
+}
